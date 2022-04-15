@@ -1,0 +1,16 @@
+.about {
+  background: $light;
+  padding: 50px 0 70px 0;
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    img {
+      border-radius: 50%;
+    }
+    p {
+      text-align: center;
+      font-size: 1.5rem;
+    }
+  }
+}
+

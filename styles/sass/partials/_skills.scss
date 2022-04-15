@@ -1,0 +1,19 @@
+.skills {
+  background: $dark;
+  color: $light;
+  padding: 30px 0 40px 0;
+  .iconContainer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+    i {
+      font-size: 3rem;
+      padding: 10px;
+    }
+  }
+  h3 {
+    border-top: 3px solid $light;
+    padding-top: 10px;
+  }
+}
