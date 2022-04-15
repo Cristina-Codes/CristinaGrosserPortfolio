@@ -10,6 +10,10 @@
     i {
       font-size: 3rem;
       padding: 10px;
+      &:hover,
+      &:focus {
+        color: $accent2;
+      }
     }
   }
   h3 {

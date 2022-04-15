@@ -262,6 +262,12 @@ h2 {
   font-size: 3.5rem;
   padding: 15px 0;
   text-align: center;
+  color: #221341;
+}
+
+.skills h2,
+.contact h2 {
+  color: #C4CBCA;
 }
 
 h3 {
@@ -274,12 +280,12 @@ h3 {
 h4 {
   font-size: 1.3rem;
   text-transform: uppercase;
-  color: green;
+  color: #3CBBB1;
 }
 
 header {
-  background: black;
-  color: rgb(247, 210, 210);
+  background: #221341;
+  color: #C4CBCA;
   text-align: center;
 }
 
@@ -294,8 +300,11 @@ nav ul li {
 }
 nav ul li a {
   text-decoration: none;
-  color: rgb(247, 210, 210);
+  color: #C4CBCA;
   font-size: 1.5rem;
+}
+nav ul li a:hover, nav ul li a:focus {
+  color: #3CBBB1;
 }
 
 .headingContainer {
@@ -307,14 +316,17 @@ nav ul li a {
 }
 .linkContainer a {
   text-decoration: none;
-  background: red;
-  color: black;
+  background: #3CBBB1;
+  color: #221341;
   font-size: 1.8rem;
   padding: 10px 15px;
 }
+.linkContainer a:hover, .linkContainer a:focus {
+  background: #EE4266;
+}
 
 .about {
-  background: rgb(247, 210, 210);
+  background: #C4CBCA;
   padding: 50px 0 70px 0;
 }
 .about .wrapper {
@@ -335,8 +347,8 @@ nav ul li a {
 }
 
 .skills {
-  background: black;
-  color: rgb(247, 210, 210);
+  background: #221341;
+  color: #C4CBCA;
   padding: 30px 0 40px 0;
 }
 .skills .iconContainer {
@@ -354,14 +366,17 @@ nav ul li a {
   font-size: 3rem;
   padding: 10px;
 }
+.skills .iconContainer i:hover, .skills .iconContainer i:focus {
+  color: #EE4266;
+}
 .skills h3 {
-  border-top: 3px solid rgb(247, 210, 210);
+  border-top: 3px solid #C4CBCA;
   padding-top: 10px;
 }
 
 .projects {
   padding: 20px 0;
-  background: rgb(247, 210, 210);
+  background: #C4CBCA;
 }
 .projects .projectContainer {
   display: -webkit-box;
@@ -389,14 +404,13 @@ nav ul li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .contact {
   padding: 20px 0 30px 0;
-  background: green;
+  background: #EE4266;
 }
 .contact .textContainer {
   display: -webkit-box;
@@ -413,14 +427,117 @@ nav ul li a {
 .contact .textContainer p {
   text-align: center;
   font-size: 1.5rem;
+  padding: 10px 0;
+}
+.contact .textContainer i {
+  font-size: 2.5rem;
 }
 
 footer {
   text-align: center;
-  background: black;
-  color: rgb(247, 210, 210);
+  background: #221341;
+  color: #C4CBCA;
   padding: 15px 0;
 }
 footer p {
   font-size: 1.5rem;
+}
+
+@media (min-width: 360px) {
+  nav ul li a {
+    font-size: 1.8rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  img {
+    margin: 0 auto;
+  }
+
+  .iconContainer {
+    max-width: 343px;
+    margin: 0 auto;
+  }
+
+  .projectContainer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .project {
+    max-width: 322px;
+  }
+  .project .textContainer {
+    padding: 10px 15px;
+  }
+}
+@media (min-width: 420px) {
+  h1 {
+    font-size: 4.8rem;
+  }
+}
+@media (min-width: 480px) {
+  nav ul li a {
+    font-size: 2.2rem;
+  }
+
+  h1 {
+    font-size: 5.2rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+    padding-bottom: 10px;
+  }
+
+  .about .wrapper p {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 4rem;
+  }
+
+  .skills .iconContainer i {
+    font-size: 3.5rem;
+  }
+}
+@media (min-width: 660px) {
+  nav ul li {
+    margin: 0 20px;
+  }
+
+  .headingContainer {
+    padding: 100px 0;
+  }
+
+  .skills .wrapper {
+    max-width: 660px;
+    width: 100%;
+  }
+  .skills .wrapper .iconContainer i {
+    padding: 10px 20px;
+  }
+
+  .projectContainer {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .project {
+    width: calc(50% - 10px);
+  }
+  .project .linkContainer {
+    padding: 10px 0;
+  }
+}
+@media (min-width: 900px) {
+  .projectContainer {
+    max-width: 750px;
+    margin: 0 auto;
+  }
 }
