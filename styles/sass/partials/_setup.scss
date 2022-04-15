@@ -6,37 +6,28 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;} /* end snippet */
 
-h1, h2, h3, h4, h5, h6, ul, ol, p {
-  padding: 0;
-  margin: 0;
-}
-
-main {
-  text-align: center;
-}
-
-ul {
-  list-style: none;
-  width: 60%;
+.wrapper {
+  max-width: 1200px;
+  width: 85%;
   margin: 0 auto;
 }
 
-li {
-  margin: 50px 0;
+html {
+  font-size: 62.5%; /* 10px */
 }
 
 a {
-  font-weight: 700;
-  color: black;
-  padding: 20px;
+  padding: 10px;
+  display: inline-block;
 }
 
-p {
-  margin-top: 10px;
-}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+} /* block removes the default whitespace around the image */
 
-a:hover,
-a:focus {
-  color: rgb(106, 57, 106);
+h1, h2, h3, h4, ul, p {
+  padding: 0;
+  margin: 0;
 }
-
