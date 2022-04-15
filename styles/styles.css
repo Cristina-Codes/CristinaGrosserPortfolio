@@ -255,20 +255,26 @@ h1, h2, h3, h4, ul, p {
 }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 3.6rem;
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   padding: 15px 0;
   text-align: center;
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 100;
   padding-bottom: 8px;
   text-align: center;
+}
+
+h4 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  color: green;
 }
 
 header {
@@ -351,4 +357,70 @@ nav ul li a {
 .skills h3 {
   border-top: 3px solid rgb(247, 210, 210);
   padding-top: 10px;
+}
+
+.projects {
+  padding: 20px 0;
+  background: rgb(247, 210, 210);
+}
+.projects .projectContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.project {
+  text-align: center;
+  padding: 10px 0;
+}
+.project img {
+  width: 100%;
+}
+.project .textContainer {
+  padding: 10px 0 5px 0;
+  background: white;
+}
+.project .textContainer p {
+  font-size: 1.3rem;
+}
+.project .linkContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact {
+  padding: 20px 0 30px 0;
+  background: green;
+}
+.contact .textContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contact .textContainer p {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+footer {
+  text-align: center;
+  background: black;
+  color: rgb(247, 210, 210);
+  padding: 15px 0;
+}
+footer p {
+  font-size: 1.5rem;
 }

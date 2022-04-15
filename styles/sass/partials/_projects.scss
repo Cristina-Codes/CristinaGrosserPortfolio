@@ -1,0 +1,28 @@
+.projects {
+  padding: 20px 0;
+  background: $light;
+  .projectContainer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+
+.project {
+  text-align: center;
+  padding: 10px 0;
+  img {
+    width: 100%;
+  }
+  .textContainer {
+    padding: 10px 0 5px 0;
+    background: white;
+    p {
+      font-size: 1.3rem;
+    }
+  }
+  .linkContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+}
