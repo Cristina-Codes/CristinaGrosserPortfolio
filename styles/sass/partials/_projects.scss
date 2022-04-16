@@ -17,6 +17,13 @@
   .textContainer {
     padding: 10px 0 5px 0;
     background: white;
+    h3 {
+      border-bottom: 2px solid $accent2;
+      padding: 0;
+    }
+    h4 {
+      padding: 5px 0;
+    }
     p {
       font-size: 1.3rem;
     }
@@ -24,5 +31,12 @@
   .linkContainer {
     display: flex;
     justify-content: space-around;
+    a {
+      background: $accent2;
+      &:hover,
+      &:focus {
+        background: $accent1;
+      }
+    }
   }
 }

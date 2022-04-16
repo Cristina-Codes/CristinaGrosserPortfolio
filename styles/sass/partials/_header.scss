@@ -12,11 +12,11 @@ nav {
       display: inline-block;
       a {
         text-decoration: none;
-        color: $light;
+        color: $accent1;
         font-size: 1.5rem;
         &:hover,
         &:focus {
-          color: $accent1;
+          color: $accent2;
         }
       }
     }

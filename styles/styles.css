@@ -236,6 +236,7 @@ html {
 html {
   font-size: 62.5%;
   /* 10px */
+  color: #221341;
 }
 
 a {
@@ -267,7 +268,7 @@ h2 {
 
 .skills h2,
 .contact h2 {
-  color: #C4CBCA;
+  color: #DED7F0;
 }
 
 h3 {
@@ -280,12 +281,12 @@ h3 {
 h4 {
   font-size: 1.3rem;
   text-transform: uppercase;
-  color: #3CBBB1;
+  color: #221341;
 }
 
 header {
   background: #221341;
-  color: #C4CBCA;
+  color: #DED7F0;
   text-align: center;
 }
 
@@ -300,11 +301,11 @@ nav ul li {
 }
 nav ul li a {
   text-decoration: none;
-  color: #C4CBCA;
+  color: #E5B769;
   font-size: 1.5rem;
 }
 nav ul li a:hover, nav ul li a:focus {
-  color: #3CBBB1;
+  color: #44BBA4;
 }
 
 .headingContainer {
@@ -316,17 +317,17 @@ nav ul li a:hover, nav ul li a:focus {
 }
 .linkContainer a {
   text-decoration: none;
-  background: #3CBBB1;
+  background: #E5B769;
   color: #221341;
   font-size: 1.8rem;
   padding: 10px 15px;
 }
 .linkContainer a:hover, .linkContainer a:focus {
-  background: #EE4266;
+  background: #44BBA4;
 }
 
 .about {
-  background: #C4CBCA;
+  background: #DED7F0;
   padding: 50px 0 70px 0;
 }
 .about .wrapper {
@@ -344,11 +345,14 @@ nav ul li a:hover, nav ul li a:focus {
 .about .wrapper p {
   text-align: center;
   font-size: 1.5rem;
+  width: 60%;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 .skills {
   background: #221341;
-  color: #C4CBCA;
+  color: #DED7F0;
   padding: 30px 0 40px 0;
 }
 .skills .iconContainer {
@@ -367,16 +371,16 @@ nav ul li a:hover, nav ul li a:focus {
   padding: 10px;
 }
 .skills .iconContainer i:hover, .skills .iconContainer i:focus {
-  color: #EE4266;
+  color: #E5B769;
 }
 .skills h3 {
-  border-top: 3px solid #C4CBCA;
+  border-top: 3px solid #DED7F0;
   padding-top: 10px;
 }
 
 .projects {
   padding: 20px 0;
-  background: #C4CBCA;
+  background: #DED7F0;
 }
 .projects .projectContainer {
   display: -webkit-box;
@@ -397,6 +401,13 @@ nav ul li a:hover, nav ul li a:focus {
   padding: 10px 0 5px 0;
   background: white;
 }
+.project .textContainer h3 {
+  border-bottom: 2px solid #44BBA4;
+  padding: 0;
+}
+.project .textContainer h4 {
+  padding: 5px 0;
+}
 .project .textContainer p {
   font-size: 1.3rem;
 }
@@ -407,10 +418,19 @@ nav ul li a:hover, nav ul li a:focus {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
+.project .linkContainer a {
+  background: #44BBA4;
+}
+.project .linkContainer a:hover, .project .linkContainer a:focus {
+  background: #E5B769;
+}
 
 .contact {
   padding: 20px 0 30px 0;
-  background: #EE4266;
+  background: #44BBA4;
+}
+.contact h2 {
+  color: #221341;
 }
 .contact .textContainer {
   display: -webkit-box;
@@ -431,12 +451,24 @@ nav ul li a:hover, nav ul li a:focus {
 }
 .contact .textContainer i {
   font-size: 2.5rem;
+  color: #221341;
+}
+.contact .textContainer i:hover, .contact .textContainer i:focus {
+  color: #221341;
+}
+.contact .textContainer .linkContainer a {
+  background: #221341;
+  color: #DED7F0;
+}
+.contact .textContainer .linkContainer a:hover, .contact .textContainer .linkContainer a:focus {
+  background: #E5B769;
+  color: #221341;
 }
 
 footer {
   text-align: center;
   background: #221341;
-  color: #C4CBCA;
+  color: #DED7F0;
   padding: 15px 0;
 }
 footer p {
@@ -490,7 +522,6 @@ footer p {
 
   h3 {
     font-size: 2rem;
-    padding-bottom: 10px;
   }
 
   .about .wrapper p {
