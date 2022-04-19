@@ -351,8 +351,18 @@ nav ul li a:hover, nav ul li a:focus {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.about .wrapper img {
+.about .wrapper .imgContainer {
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
+  border: 2px solid #44BBA4;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+}
+.about .wrapper .imgContainer img {
+  position: absolute;
+  top: -40px;
 }
 .about .wrapper p {
   text-align: center;
