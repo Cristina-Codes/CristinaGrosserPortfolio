@@ -255,8 +255,13 @@ h1, h2, h3, h4, ul, p {
   margin: 0;
 }
 
+html {
+  font-family: "Barlow", sans-serif;
+}
+
 h1 {
   font-size: 3.6rem;
+  font-family: "Red Hat Display", sans-serif;
 }
 
 h2 {
@@ -264,6 +269,7 @@ h2 {
   padding: 15px 0;
   text-align: center;
   color: #221341;
+  font-family: "Red Hat Display", sans-serif;
 }
 
 .skills h2,
@@ -273,9 +279,9 @@ h2 {
 
 h3 {
   font-size: 1.8rem;
-  font-weight: 100;
   padding-bottom: 8px;
   text-align: center;
+  font-weight: 400;
 }
 
 h4 {
@@ -283,6 +289,10 @@ h4 {
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #221341;
+}
+
+.linkContainer a {
+  font-family: "Red Hat Display", sans-serif;
 }
 
 header {
@@ -315,6 +325,7 @@ nav ul li a:hover, nav ul li a:focus {
 
 .linkContainer {
   padding: 10px;
+  margin-top: 10px;
 }
 .linkContainer a {
   text-decoration: none;
