@@ -12,6 +12,7 @@
       padding: 10px;
       &:hover,
       &:focus {
+        transition: $hoverState;
         color: $accent1;
       }
     }

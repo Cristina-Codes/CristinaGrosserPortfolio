@@ -9,7 +9,7 @@
     flex-direction: column;
     align-items: center;
     a {
-      text-decoration: none;
+      text-decoration: none;  
     }
     p {
       text-align: center;
@@ -21,7 +21,8 @@
       color: $dark;
       &:hover,
       &:focus {
-        color: $dark;
+        transition: $hoverState;
+        color: $light;
       }
     }
     .linkContainer a {
@@ -29,6 +30,7 @@
       color: $light;
       &:hover,
       &:focus {
+        transition: $hoverState;
         background: $accent1;
         color: $dark;
       }
@@ -45,5 +47,15 @@ footer {
   padding: 15px 0;
   p {
     font-size: 1.5rem;
+  }
+  a {
+    text-decoration: none;
+    color: $light;
+    padding: 0;
+    &:hover,
+    &:focus {
+      transition: $hoverState;
+      color: $accent2;
+    }
   }
 }

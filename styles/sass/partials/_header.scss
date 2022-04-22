@@ -16,6 +16,7 @@ nav {
         font-size: 1.5rem;
         &:hover,
         &:focus {
+          transition: $hoverState;
           color: $accent2;
         }
       }
@@ -39,6 +40,7 @@ nav {
     padding: 10px 15px;
     &:hover,
     &:focus {
+      transition: $hoverState;
       background: $accent2;
     }
   }

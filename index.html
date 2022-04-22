@@ -42,17 +42,22 @@
   <main>
     <section id="about" class="about">
       <div class="wrapper">
-        <div class="imgContainer">
-          <img src="./assets/Optimized-IMG_1863.jpg" alt="Cristina Grosser">
-        </div>
-        <h2>About Me</h2>
-        <p>From ECE to HTML...I began my career as an Early Educator and came to a point of change in 2021. After dabbling in code on my own, I was ready for the full-time switch and began taking classes. This brings me to you, ready to work and continue expanding my skills!</p>
+        <div class="leftSide">
+          <div class="imgContainer">
+            <img src="./assets/Optimized-IMG_1863.jpg" alt="Cristina Grosser" id="me">
+          </div><!-- .imgContainer END -->
+          <h2>About Me</h2>
+        </div><!-- .leftSide END -->
+        <div class="rightSide">
+          <p>From ECE to HTML...I began my career as an Early Educator and came to a point of change in 2021. After dabbling in code on my own, I was ready for the full-time switch and began taking classes. This brings me to you, ready to work and continue expanding my skills!</p>
+          <p>I (literally) head for the hills for me-time. The best moments are spotting wildlife on the trails while getting a chance to refresh. If I can't make it outside, I'll have music playing while I cook, bake, or hang with my cat! </p>
+        </div><!-- .rightSide END -->
       </div><!-- .wrapper END -->
     </section>
 
     <section id="skills" class="skills">
       <div class="wrapper">
-        <h2>Skills</h2>
+        <h2>Toolkit</h2>
         <div class="iconContainer">
           <i class="devicon-html5-plain" title="HTML5"></i>
           <i class="devicon-css3-plain" title="CSS3"></i>
@@ -63,9 +68,11 @@
           <i class="devicon-git-plain" title="Git"></i>
           <i class="devicon-github-original" title="GitHub"></i>
           <i class="devicon-vscode-plain" title="VS Code"></i>
+          <i class="devicon-nodejs-plain" title="Node.js"></i>
           <i class="devicon-jquery-plain" title="jQuery"></i>
+          <i class="devicon-bootstrap-plain" title="Bootstrap"></i>
         </div>
-        <h3>Developing Skills</h3>
+        <h3>Adding to Toolkit</h3>
         <div class="iconContainer">
           <i class="devicon-jupyter-plain" title="Jupyter Notebook"></i>
           <i class="devicon-python-plain" title="Python"></i>
@@ -73,8 +80,6 @@
           <i class="devicon-pandas-original" title="pandas"></i>
           <i class="devicon-numpy-original" title="NumPy"></i>
           <i class="devicon-matlab-plain" title="MATLAB"></i>
-          <i class="devicon-nodejs-plain" title="Node.js"></i>
-          <i class="devicon-bootstrap-plain" title="Bootstrap"></i>
         </div><!-- .iconContainer END -->
       </div><!-- .wrapper END -->
     </section>
@@ -158,13 +163,12 @@
             <a href="https://github.com/Cristina-Codes" target="_blank">
               <i class="devicon-github-original"></i>
             </a>
-            <a href="">
+            <a href="mailto:cristinagrosser@gmail.com">
               <i class="fa-solid fa-envelope"></i>
             </a>
           </div><!-- .iconContainer END -->
-          <p>Let's work together!</p>
           <div class="linkContainer">
-            <a href="###">Email Cristina</a>
+            <a href="https://calendly.com/cristinagrosser" target="_blank">Let's meet!</a>
           </div><!-- .linkContainer END -->
         </div><!-- .textContainer END -->
       </div><!-- .wrapper END -->
@@ -172,7 +176,9 @@
   </main>
 
   <footer>
-    <p class="wrapper">Built in 2022 by Cristina Grosser</p>
+    <p class="wrapper">Built in 2022 by <a href="#about">Cristina Grosser</a></p>
   </footer>
+
+  <script src="./script.js"></script>
 </body>
 </html>
