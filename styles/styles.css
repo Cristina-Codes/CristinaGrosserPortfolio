@@ -300,6 +300,20 @@ header {
   background: #221341;
   color: #DED7F0;
   text-align: center;
+  height: 90vh;
+  position: relative;
+}
+header .iconContainer {
+  font-size: 5.5rem;
+  color: #E5B769;
+  position: absolute;
+  bottom: 30px;
+  left: 48.5%;
+}
+header .iconContainer:hover, header .iconContainer:focus {
+  color: #44BBA4;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 nav {
@@ -531,6 +545,41 @@ footer a:hover, footer a:focus {
   color: #44BBA4;
 }
 
+.animate__pulse {
+  -webkit-animation-name: pulse;
+          animation-name: pulse;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.animateBounce {
+  -webkit-animation: bounces;
+          animation: bounces;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes bounces {
+  50% {
+    translate: 0, 50px;
+  }
+  100% {
+    translate: 0, 50px;
+  }
+}
+
+@keyframes bounces {
+  50% {
+    translate: 0, 50px;
+  }
+  100% {
+    translate: 0, 50px;
+  }
+}
 @media (min-width: 360px) {
   nav ul li a {
     font-size: 1.8rem;
@@ -573,11 +622,11 @@ footer a:hover, footer a:focus {
   }
 
   h1 {
-    font-size: 5.2rem;
+    font-size: 9rem;
   }
 
   h3 {
-    font-size: 2rem;
+    font-size: 3.5rem;
   }
 
   .about .wrapper p {

@@ -1,0 +1,20 @@
+.animate__pulse {
+  animation-name: pulse; 
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+.animateBounce {
+  animation: bounces; 
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounces {
+  50% {
+    translate: (0, 50px);
+  }
+  100% {
+    translate: (0, 50px);
+  }
+}

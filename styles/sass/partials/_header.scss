@@ -2,6 +2,20 @@ header {
   background: $dark;
   color: $light;
   text-align: center;
+  height: 90vh;
+  position: relative;
+  .iconContainer {
+    font-size: 5.5rem;
+    color: $accent1;
+    position: absolute;
+    bottom: 30px;
+    left: 48.5%;
+    &:hover, 
+    &:focus {
+      color: $accent2;
+      transition: $hoverState;
+    }
+  }
 }
 
 nav {
