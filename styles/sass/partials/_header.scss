@@ -4,23 +4,24 @@ header {
   text-align: center;
   height: 90vh;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 nav {
   padding: 20px 0;
   ul {
     list-style: none;
-    li {
-      display: inline-block;
-      a {
-        text-decoration: none;
-        color: $accent1;
-        font-size: 1.5rem;
-        &:hover,
-        &:focus {
-          transition: $hoverState;
-          color: $accent2;
-        }
+    display: flex;
+    justify-content: space-around;
+    a {
+      text-decoration: none;
+      color: $accent1;
+      font-size: 1.5rem;
+      &:hover,
+      &:focus {
+        transition: $hoverState;
+        color: $accent2;
       }
     }
   }
@@ -30,7 +31,7 @@ nav {
   padding: 60px 0 80px 0;
 }
 
-//link styled like button
+//link styled as button
 .linkContainer {
   padding: 10px;
   margin-top: 10px;

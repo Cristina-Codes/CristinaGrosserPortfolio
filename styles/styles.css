@@ -312,10 +312,11 @@ h2 {
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 400;
   font-family: "Red Hat Display", sans-serif;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 h4 {
@@ -336,6 +337,13 @@ header {
   text-align: center;
   height: 90vh;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 nav {
@@ -343,16 +351,18 @@ nav {
 }
 nav ul {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
-nav ul li {
-  display: inline-block;
-}
-nav ul li a {
+nav ul a {
   text-decoration: none;
   color: #E5B769;
   font-size: 1.5rem;
 }
-nav ul li a:hover, nav ul li a:focus {
+nav ul a:hover, nav ul a:focus {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   color: #44BBA4;
@@ -471,7 +481,7 @@ nav ul li a:hover, nav ul li a:focus {
   border-bottom: none;
 }
 .project .textContainer {
-  padding: 10px 0 5px 0;
+  padding: 15px 10px 5px 10px;
   background: white;
   border: 2px solid #BBC0C3;
   border-top: none;
@@ -631,10 +641,6 @@ footer a:hover, footer a:focus {
     font-size: 1.8rem;
   }
 
-  h1 {
-    font-size: 4rem;
-  }
-
   img {
     margin: 0 auto;
   }
@@ -655,11 +661,6 @@ footer a:hover, footer a:focus {
   }
   .project .textContainer {
     padding: 10px 15px;
-  }
-}
-@media (min-width: 420px) {
-  h1 {
-    font-size: 4.8rem;
   }
 }
 @media (min-width: 480px) {
@@ -684,16 +685,16 @@ footer a:hover, footer a:focus {
   }
 
   .skills .iconContainer i {
-    font-size: 3.5rem;
+    font-size: 5.5rem;
   }
 }
 @media (min-width: 660px) {
-  nav ul li {
-    margin: 0 20px;
+  h1 {
+    font-size: 7.6rem;
   }
 
   .headingContainer {
-    padding: 100px 0;
+    padding-top: 100px;
   }
 
   .skills .wrapper {
@@ -718,6 +719,14 @@ footer a:hover, footer a:focus {
   }
 }
 @media (min-width: 900px) {
+  nav ul li a {
+    font-size: 2.5rem;
+  }
+
+  h1 {
+    font-size: 9rem;
+  }
+
   .about .wrapper {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
