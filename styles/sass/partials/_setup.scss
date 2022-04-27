@@ -15,6 +15,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 html {
   font-size: 62.5%; /* 10px */
   color: $dark;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -30,4 +31,36 @@ img {
 h1, h2, h3, h4, ul, p {
   padding: 0;
   margin: 0;
+}
+
+.arrow {
+  font-size: 5.5rem;
+  color: $accent1;
+  position: absolute;
+  bottom: 30px;
+  left: 83%;
+  &:hover, 
+  &:focus {
+    color: $accent2;
+    transition: $hoverState;
+  }
+}
+
+.shortArrow {
+  bottom: 10px;
+  left: 80%;
+  animation: none;
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+  }
+}
+
+.upArrow {
+  color: $dark;
+  bottom: -15px;
+  &:hover,
+  &:focus {
+    color: $accent1;
+  }
 }

@@ -10,7 +10,7 @@
 
 .project {
   text-align: center;
-  padding: 10px 0;
+  padding: 20px 0;
   img {
     border: 2px solid $neutral;
     border-bottom: none;
@@ -28,7 +28,8 @@
       padding: 5px 0;
     }
     p {
-      font-size: 1.3rem;
+      font-size: 1.5rem;
+      line-height: 20px;
     }
   }
   .linkContainer {

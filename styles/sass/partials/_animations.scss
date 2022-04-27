@@ -11,10 +11,16 @@
 }
 
 @keyframes bounces {
-  50% {
-    translate: (0, 50px);
+  20% {
+      transform: translateY(-20px);
   }
-  100% {
-    translate: (0, 50px);
+  25% {
+      transform: translateY(0px);
+  }
+  30% {
+    transform: translateY(-20px);
+  }
+  35% {
+    transform: translateY(0px);
   }
 }

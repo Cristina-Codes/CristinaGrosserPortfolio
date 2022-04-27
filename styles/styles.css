@@ -237,6 +237,7 @@ html {
   font-size: 62.5%;
   /* 10px */
   color: #221341;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -255,13 +256,46 @@ h1, h2, h3, h4, ul, p {
   margin: 0;
 }
 
+.arrow {
+  font-size: 5.5rem;
+  color: #E5B769;
+  position: absolute;
+  bottom: 30px;
+  left: 83%;
+}
+.arrow:hover, .arrow:focus {
+  color: #44BBA4;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.shortArrow {
+  bottom: 10px;
+  left: 80%;
+  -webkit-animation: none;
+          animation: none;
+}
+.shortArrow:hover, .shortArrow:focus {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.upArrow {
+  color: #221341;
+  bottom: -15px;
+}
+.upArrow:hover, .upArrow:focus {
+  color: #E5B769;
+}
+
 html {
   font-family: "Barlow", sans-serif;
 }
 
 h1 {
-  font-size: 3.6rem;
+  font-size: 7rem;
   font-family: "Red Hat Display", sans-serif;
+  padding-top: 30px;
 }
 
 h2 {
@@ -278,18 +312,18 @@ h2 {
 }
 
 h3 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 400;
   font-family: "Red Hat Display", sans-serif;
-  padding-bottom: 8px;
   text-align: center;
 }
 
 h4 {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #221341;
+  margin: 5px 0;
 }
 
 .linkContainer a {
@@ -302,18 +336,6 @@ header {
   text-align: center;
   height: 90vh;
   position: relative;
-}
-header .iconContainer {
-  font-size: 5.5rem;
-  color: #E5B769;
-  position: absolute;
-  bottom: 30px;
-  left: 48.5%;
-}
-header .iconContainer:hover, header .iconContainer:focus {
-  color: #44BBA4;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
 }
 
 nav {
@@ -359,7 +381,8 @@ nav ul li a:hover, nav ul li a:focus {
 
 .about {
   background: #DED7F0;
-  padding: 50px 0 70px 0;
+  padding: 50px 0 90px 0;
+  position: relative;
 }
 .about .wrapper {
   display: -webkit-box;
@@ -399,7 +422,8 @@ nav ul li a:hover, nav ul li a:focus {
 .skills {
   background: #221341;
   color: #DED7F0;
-  padding: 30px 0 40px 0;
+  padding: 40px 0 60px 0;
+  position: relative;
 }
 .skills .iconContainer {
   display: -webkit-box;
@@ -413,8 +437,8 @@ nav ul li a:hover, nav ul li a:focus {
   padding-bottom: 10px;
 }
 .skills .iconContainer i {
-  font-size: 3rem;
-  padding: 10px;
+  font-size: 4rem;
+  padding: 15px 10px;
 }
 .skills .iconContainer i:hover, .skills .iconContainer i:focus {
   -webkit-transition: all 0.3s ease;
@@ -440,7 +464,7 @@ nav ul li a:hover, nav ul li a:focus {
 
 .project {
   text-align: center;
-  padding: 10px 0;
+  padding: 20px 0;
 }
 .project img {
   border: 2px solid #BBC0C3;
@@ -460,7 +484,8 @@ nav ul li a:hover, nav ul li a:focus {
   padding: 5px 0;
 }
 .project .textContainer p {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
+  line-height: 20px;
 }
 .project .linkContainer {
   display: -webkit-box;
@@ -481,6 +506,7 @@ nav ul li a:hover, nav ul li a:focus {
 .contact {
   padding: 20px 0 30px 0;
   background: #44BBA4;
+  position: relative;
 }
 .contact h2 {
   color: #221341;
@@ -564,20 +590,40 @@ footer a:hover, footer a:focus {
 }
 
 @-webkit-keyframes bounces {
-  50% {
-    translate: 0, 50px;
+  20% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
   }
-  100% {
-    translate: 0, 50px;
+  25% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  30% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  35% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
 }
 
 @keyframes bounces {
-  50% {
-    translate: 0, 50px;
+  20% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
   }
-  100% {
-    translate: 0, 50px;
+  25% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  30% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  35% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
 }
 @media (min-width: 360px) {
