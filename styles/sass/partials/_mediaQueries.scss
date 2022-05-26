@@ -112,6 +112,16 @@
     justify-content: center;
   }
 
+  .skills {
+    .iconContainer {
+      grid-template-areas: 
+      '1 2 3 4'
+      '5 6 7 8'
+      '9 10 11 12';
+      max-width: 600px;
+    }
+  }
+
   .projectContainer {
     max-width: 750px;
     margin: 0 auto;
@@ -120,13 +130,13 @@
 
 
 
-// @media (min-width: 1200px) {
-//   .projectContainer{
-//     max-width: 1000px;
-//   }
+@media (min-width: 1200px) {
+  .projectContainer{
+    max-width: 1000px;
+  }
 
-//   .project {
-//     width: calc((100% / 3) - 10px);
-//     min-height: 445px;
-//   }
-// }
+  .project {
+    width: calc((100% / 3) - 10px);
+    min-height: 445px;
+  }
+}

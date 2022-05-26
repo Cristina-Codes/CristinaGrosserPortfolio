@@ -12,7 +12,6 @@
   text-align: center;
   margin: 20px 0;
   min-height: 445px;
-  background: yellow;
   .imgContainer{
     height: calc(100% / 3);
     img {
@@ -56,4 +55,8 @@
   p {
     padding: 10px 0 15px 0;
   }
+}
+
+.social {
+  font-style: italic;
 }

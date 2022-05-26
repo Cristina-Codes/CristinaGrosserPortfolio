@@ -4,22 +4,44 @@
   padding: 40px 0 60px 0;
   position: relative;
   .iconContainer {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-areas: 
+    '1 2 3'
+    '4 5 6'
+    '7 8 9'
+    '10 11 12';
+    grid-template-columns: repeat(3, 1fr);
     padding-bottom: 10px;
-    i {
+    .iconLI {
+      text-align: center;
+      list-style: none;
       font-size: 4rem;
       padding: 15px 10px;
-      &:hover,
-      &:focus {
-        transition: $hoverState;
-        color: $accent1;
-      }
+      transition: all 0.5s ease;
     }
   }
   h3 {
     border-top: 3px solid $light;
     padding-top: 10px;
+  }
+}
+
+.reveal {
+  font-size: 1.5rem;
+  transform: rotateX(-180deg);
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.flip {
+  .reveal {
+    transform: rotate(0deg) rotateX(0deg);
+  }
+}
+
+.iconLI {
+  span {
+    display: block;
   }
 }

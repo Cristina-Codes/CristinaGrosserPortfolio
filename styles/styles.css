@@ -436,28 +436,43 @@ nav ul a:hover, nav ul a:focus {
   position: relative;
 }
 .skills .iconContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  display: grid;
+  grid-template-areas: "1 2 3" "4 5 6" "7 8 9" "10 11 12";
+  grid-template-columns: repeat(3, 1fr);
   padding-bottom: 10px;
 }
-.skills .iconContainer i {
+.skills .iconContainer .iconLI {
+  text-align: center;
+  list-style: none;
   font-size: 4rem;
   padding: 15px 10px;
-}
-.skills .iconContainer i:hover, .skills .iconContainer i:focus {
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  color: #E5B769;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .skills h3 {
   border-top: 3px solid #DED7F0;
   padding-top: 10px;
+}
+
+.reveal {
+  font-size: 1.5rem;
+  -webkit-transform: rotateX(-180deg);
+          transform: rotateX(-180deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.flip .reveal {
+  -webkit-transform: rotate(0deg) rotateX(0deg);
+          transform: rotate(0deg) rotateX(0deg);
+}
+
+.iconLI span {
+  display: block;
 }
 
 .projects {
@@ -476,7 +491,6 @@ nav ul a:hover, nav ul a:focus {
   text-align: center;
   margin: 20px 0;
   min-height: 445px;
-  background: yellow;
 }
 .project .imgContainer {
   height: 33.3333333333%;
@@ -521,6 +535,10 @@ nav ul a:hover, nav ul a:focus {
 
 .arora p {
   padding: 10px 0 15px 0;
+}
+
+.social {
+  font-style: italic;
 }
 
 .contact {
@@ -769,8 +787,23 @@ footer a:hover, footer a:focus {
             justify-content: center;
   }
 
+  .skills .iconContainer {
+    grid-template-areas: "1 2 3 4" "5 6 7 8" "9 10 11 12";
+    max-width: 600px;
+  }
+
   .projectContainer {
     max-width: 750px;
     margin: 0 auto;
+  }
+}
+@media (min-width: 1200px) {
+  .projectContainer {
+    max-width: 1000px;
+  }
+
+  .project {
+    width: calc(33.3333333333% - 10px);
+    min-height: 445px;
   }
 }
