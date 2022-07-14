@@ -20,6 +20,10 @@
       transition: all 0.5s ease;
     }
   }
+  .adding {
+    display: flex;
+    justify-content: center;
+  }
   h3 {
     border-top: 3px solid $light;
     padding-top: 10px;

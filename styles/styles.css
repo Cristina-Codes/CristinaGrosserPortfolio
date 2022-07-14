@@ -224,9 +224,7 @@ html {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-/* end snippet */
+} /* end snippet */
 .wrapper {
   max-width: 1200px;
   width: 90%;
@@ -234,8 +232,7 @@ html {
 }
 
 html {
-  font-size: 62.5%;
-  /* 10px */
+  font-size: 62.5%; /* 10px */
   color: #221341;
   scroll-behavior: smooth;
 }
@@ -248,9 +245,7 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
-}
-
-/* block removes the default whitespace around the image */
+} /* block removes the default whitespace around the image */
 h1, h2, h3, h4, ul, p {
   padding: 0;
   margin: 0;
@@ -448,6 +443,14 @@ nav ul a:hover, nav ul a:focus {
   padding: 15px 10px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+}
+.skills .adding {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .skills h3 {
   border-top: 3px solid #DED7F0;
@@ -668,22 +671,18 @@ footer a:hover, footer a:focus {
   nav ul li a {
     font-size: 1.8rem;
   }
-
   img {
     margin: 0 auto;
   }
-
   .iconContainer {
     max-width: 343px;
     margin: 0 auto;
   }
-
   .projectContainer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-
   .project {
     max-width: 322px;
   }
@@ -695,23 +694,18 @@ footer a:hover, footer a:focus {
   nav ul li a {
     font-size: 2.2rem;
   }
-
   h1 {
     font-size: 9rem;
   }
-
   h3 {
     font-size: 3.5rem;
   }
-
   .about .wrapper p {
     font-size: 2rem;
   }
-
   h2 {
     font-size: 4rem;
   }
-
   .skills .iconContainer i {
     font-size: 5.5rem;
   }
@@ -720,11 +714,9 @@ footer a:hover, footer a:focus {
   h1 {
     font-size: 7.6rem;
   }
-
   .headingContainer {
     padding-top: 100px;
   }
-
   .skills .wrapper {
     max-width: 660px;
     width: 100%;
@@ -732,13 +724,11 @@ footer a:hover, footer a:focus {
   .skills .wrapper .iconContainer i {
     padding: 10px 20px;
   }
-
   .projectContainer {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-
   .project {
     width: calc(50% - 10px);
   }
@@ -750,11 +740,9 @@ footer a:hover, footer a:focus {
   nav ul li a {
     font-size: 2.5rem;
   }
-
   h1 {
     font-size: 9rem;
   }
-
   .about .wrapper {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -768,11 +756,9 @@ footer a:hover, footer a:focus {
   .about .wrapper .imgContainer img {
     top: -70px;
   }
-
   .leftSide {
     width: 40%;
   }
-
   .rightSide {
     width: 60%;
     display: -webkit-box;
@@ -786,12 +772,10 @@ footer a:hover, footer a:focus {
         -ms-flex-pack: center;
             justify-content: center;
   }
-
   .skills .iconContainer {
     grid-template-areas: "1 2 3 4" "5 6 7 8" "9 10 11 12";
     max-width: 600px;
   }
-
   .projectContainer {
     max-width: 750px;
     margin: 0 auto;
@@ -801,7 +785,6 @@ footer a:hover, footer a:focus {
   .projectContainer {
     max-width: 1000px;
   }
-
   .project {
     width: calc(33.3333333333% - 10px);
     min-height: 445px;
