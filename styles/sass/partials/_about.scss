@@ -7,6 +7,9 @@
     flex-direction: column;
     align-items: center;
     .imgContainer { 
+      background-image: url("../assets/Optimized-IMG_9269.jpeg");
+      background-size: 100%;
+      background-position-y: 75%;
       width: 200px;
       height: 200px;
       border-radius: 50%;
@@ -25,8 +28,4 @@
       padding: 10px 0;
     }
   }
-}
-
-.hikerMe {
-  top: 20px;
 }
