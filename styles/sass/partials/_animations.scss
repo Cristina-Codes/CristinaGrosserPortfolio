@@ -76,6 +76,32 @@
   }
 }
 
+.about {
+  .imgContainer {
+    img {
+    animation: imageChange;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    }
+  }
+}
+
+@keyframes imageChange {
+  35% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+}
+
+
 //footer let's meet
 .animate__pulse {
   animation-name: pulse;

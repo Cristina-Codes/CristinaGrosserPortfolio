@@ -330,6 +330,7 @@ h4 {
 .slideIn {
   font-size: 3.5rem;
   display: inline-block;
+  font-family: "Red Hat Display", sans-serif;
 }
 
 .second h3 {
@@ -412,6 +413,9 @@ nav ul a:hover, nav ul a:focus {
           align-items: center;
 }
 .about .wrapper .imgContainer {
+  background-image: url("../assets/Optimized-IMG_9269.jpeg");
+  background-size: 100%;
+  background-position-y: 75%;
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -428,10 +432,6 @@ nav ul a:hover, nav ul a:focus {
   text-align: center;
   font-size: 1.8rem;
   padding: 10px 0;
-}
-
-.hikerMe {
-  top: 20px;
 }
 
 .skills {
@@ -738,6 +738,44 @@ footer a:hover, footer a:focus {
   35% {
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
+  }
+}
+.about .imgContainer img {
+  -webkit-animation: imageChange;
+          animation: imageChange;
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes imageChange {
+  35% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+}
+
+@keyframes imageChange {
+  35% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
   }
 }
 .animate__pulse {
