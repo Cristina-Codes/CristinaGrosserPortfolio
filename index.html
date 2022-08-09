@@ -1,287 +1,409 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Portfolio | Cristina Grosser</title>
+    <title>Portfolio | Cristina Grosser</title>
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Red+Hat+Display:wght@400;700&display=swap" rel="stylesheet">  
-  <!-- Fontawesome -->
-  <script src='https://kit.fontawesome.com/207bdf71a3.js' crossorigin='anonymous'></script>
-  <!-- devIcon -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-  <!-- Animations -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <!-- Styles -->
-  <link rel="stylesheet" href="./styles/styles.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Red+Hat+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/207bdf71a3.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- devIcon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
+    <!-- Animations -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- Styles -->
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <header id="home">
+      <nav class="wrapper">
+        <ul>
+          <li><a href="#name">Home</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
 
-</head>
-<body>
-  <header id="home">
-    <nav class="wrapper">
-      <ul>
-        <li><a href="#name">Home</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-
-    <div class="headingContainer wrapper">
-      <div class="first">
-        <p class="greeting">Hello...</p>
-        <p class="slideIn">I am</p>
-      </div>
-    <div class="second">
-        <h1 id="name">Cristina</h1>
-        <h3>Frontend Developer</h3>
-        <div class="linkContainer">
-          <a href="#contact">Get in Touch</a>
-        </div><!-- .linkContainer END -->
-      </div><!-- .second END -->
-        <a href='#about' class="arrow animateBounce">
+      <div class="headingContainer wrapper">
+        <div class="first">
+          <p class="greeting">Hello...</p>
+          <p class="slideIn">I am</p>
+        </div>
+        <div class="second">
+          <h1 id="name">Cristina</h1>
+          <h3>Frontend Developer</h3>
+          <div class="linkContainer">
+            <a href="#contact">Get in Touch</a>
+          </div>
+          <!-- .linkContainer END -->
+        </div>
+        <!-- .second END -->
+        <a href="#about" class="arrow animateBounce">
           <i class="fa-solid fa-arrow-down-long"></i>
         </a>
-    </div><!-- .headingContainer .wrapper END -->
-  </header>
+      </div>
+      <!-- .headingContainer .wrapper END -->
+    </header>
 
-  <main>
-    <section id="about" class="about">
-      <div class="wrapper">
-        <div class="leftSide">
-          <div class="imgContainer">
-            <img src="./assets/Optimized-IMG_1863.jpg" alt="Cristina Grosser" id="me">
-          </div><!-- .imgContainer END -->
-          <h2>About Me</h2>
-        </div><!-- .leftSide END -->
-        <div class="rightSide">
-          <p>From ECE to HTML...I began my career as an Early Educator and came to a point of change in 2021. After dabbling in code on my own, I was ready for the full-time switch and began taking classes. This brings me to you, ready to work and continue expanding my skills!</p>
-          <p>I (literally) head for the hills for me-time. The best moments are spotting wildlife on the trails while getting a chance to refresh. If I can't make it outside, I'll have music playing while I cook, bake, or hang with my cat! </p>
-        </div><!-- .rightSide END -->
-        <a href='#skills' class="arrow shortArrow">
-          <i class="fa-solid fa-angle-down"></i>
-        </a>
-      </div><!-- .wrapper END -->
-    </section>
-
-    <section id="skills" class="skills">
-      <div class="wrapper">
-        <h2>Toolkit</h2>
-        <ul class="iconContainer">
-          <li class="iconLI">
-            <i class="devicon-html5-plain"></i>
-            <p class="reveal">HTML5</p>
-          </li>
-          <li class="iconLI">
-            <i class="devicon-css3-plain"></i>
-            <p class="reveal">CSS3</p>
-          </li>
-          <li class="iconLI">
-            <i class="devicon-sass-original"></i>
-            <p class="reveal">Sass</p>
-          </li>
-          <li class="iconLI">
-            <i class="devicon-bootstrap-plain"></i>
-            <p class="reveal">Bootstrap</p>
-          </li>
-          <li class="iconLI">
-            <i class="devicon-javascript-plain"></i>
-            <p class="reveal">JavaScript</p>
-          </li>
-          <li class="iconLI">
-            <i class="devicon-react-original"></i>
-            <p class="reveal">React</p>
-          </li>
-          <li class="iconLI">
-            <i class="devicon-python-plain"></i>
-            <p class="reveal">Python</p>
-          </li>
-          <li class="iconLI">
-            <i class="devicon-flask-original"></i>
-            <p class="reveal">Flask</p>
-          </li>
-          <li class="iconLI">
-            <i class="devicon-firebase-plain"></i>
-            <p class="reveal">Firebase</p>
-          </li>
-          <li class="iconLI">
-            <i class="devicon-bootstrap-plain"></i>
-            <p class="reveal">Bootstrap</p>
-          </li>
-          <li class="iconLI">
-            <i class="devicon-jquery-plain"></i>
-            <p class="reveal">jQuery</p>
-          </li>
-          <li class="iconLI">
-            <i class="devicon-git-plain"></i>
-            <p class="reveal">Git</p>
-          </li>
-          <li class="iconLI">
-            <i class="devicon-github-original"></i>
-            <p class="reveal">GitHub</p>
-          </li>
-          <li class="iconLI">
-            <i class="devicon-vscode-plain"></i>
-            <p class="reveal">VS Code</p>
-          </li>
-          <!-- <li class="iconLI"> -->
-            <!-- <i class="devicon-nodejs-plain" title="Node.js"></i> -->
-          <!-- </li> -->
-        </ul><!-- .iconContainer END -->
-        <h3>Adding to Toolkit</h3>
-        <ul class="iconContainer adding">
-          <!-- <li class="iconLI">
-            <i class="devicon-jupyter-plain"></i>
-            <p class="reveal">Jupyter <span>Notebook</span></p>
-          </li>
-          <li class="iconLI">
-            <i class="devicon-pandas-original"></i>
-            <p class="reveal">pandas</p>
-          </li>
-          <li class="iconLI">
-            <i class="devicon-numpy-original"></i>
-            <p class="reveal">NumPy</p>
-          </li>
-          <li class="iconLI">
-            <i class="devicon-matlab-plain"></i>
-            <p class="reveal">MATLAB</p>
-          </li> -->
-          <li class="iconLI node">
-            <i class="devicon-nodejs-plain"></i>
-            <p class="reveal">Node.js</p>
-          </li>
-          <li class="iconLI">
-            <i class="devicon-express-original"></i>
-            <p class="reveal">Express</p>
-          </li>
-        </ul><!-- .iconContainer END -->
-        <a href='#projects' class="arrow shortArrow">
-          <i class="fa-solid fa-angle-down"></i>
-        </a>
-      </div><!-- .wrapper END -->
-    </section>
-
-    <section id="projects" class="projects">
-      <div class="wrapper">
-        <h2>Projects</h2>
-        <div class="projectContainer">
-          <div class="project">
+    <main>
+      <section id="about" class="about">
+        <div class="wrapper">
+          <div class="leftSide">
             <div class="imgContainer">
-              <img src="./assets/Optimized-HelpMeSocial.png" alt="A mockup of project HelpMeSocial💬">
-            </div><!-- .imgContainer END -->
-            <div class="textContainer">
-              <h3>HelpMeSocial💬</h3>
-              <h4>HTML5 | CSS3/Sass | React | Firebase | API</h4>
-              <p>Have you forgotten how to <span class='social'>social?</span> Look no further! HelpMeSocial💬 has all the random facts you could ever want to spice up any conversation.</p>
-              <div class="linkContainer">
-                <a href='https://helpmesocial.netlify.app/' target='_blank'>View Live</a>
-                <a href='https://github.com/Cristina-Codes/helpMeSocial' target='_blank'>View Code</a>
-              </div><!-- .linkContainer END -->
-            </div><!-- .textContainer END -->
-          </div><!-- .project END -->
+              <img
+                src="./assets/Optimized-IMG_1863.jpg"
+                alt="Cristina Grosser"
+                id="me"
+              />
+            </div>
+            <!-- .imgContainer END -->
+            <h2>About Me</h2>
+          </div>
+          <!-- .leftSide END -->
+          <div class="rightSide">
+            <p>
+              From ECE to HTML...I began my career as an Early Educator and came
+              to a point of change in 2021. After dabbling in code on my own, I
+              was ready for the full-time switch and began taking classes. This
+              brings me to you, ready to work and continue expanding my skills!
+            </p>
+            <p>
+              I (literally) head for the hills for me-time. The best moments are
+              spotting wildlife on the trails while getting a chance to refresh.
+              If I can't make it outside, I'll have music playing while I cook,
+              bake, or hang with my cat!
+            </p>
+          </div>
+          <!-- .rightSide END -->
+          <a href="#skills" class="arrow shortArrow">
+            <i class="fa-solid fa-angle-down"></i>
+          </a>
+        </div>
+        <!-- .wrapper END -->
+      </section>
 
-
-          <div class="project">
-            <div class="imgContainer">
-              <img src="./assets/Optimized-planted.png" alt="A mockup of project Planted">
-            </div><!-- .imgContainer END -->
-            <div class="textContainer">
-              <h3>Planted</h3>
-              <h4>HTML5 | CSS3/Sass | JavaScript</h4>
-              <p>Solo project with Juno College working to create a multipage site from the provided PSD. The site is responsive, accessible, and has the beginnings of an active comment section.</p>
-              <div class="linkContainer">
-                <a href="https://plantedproject.netlify.app/" target="_blank">View Live</a>
-                <a href="https://github.com/Cristina-Codes/planted" target="_blank">View Code</a>
-              </div><!-- .linkContainer END -->
-            </div><!-- .textContainer END -->
-          </div><!-- .project END -->
-
-
-          <div class="project">
-            <div class="imgContainer">
-              <img src="./assets/Optimized-taglines.png" alt="A mockup of project Taglines...with a VENGEANCE">
-            </div><!-- .imgContainer END -->
-            <div class="textContainer">
-              <h3>Taglines...with a VENGEANCE</h3>
-              <h4>HTML5 | CSS3 | JavaScript | API</h4>
-              <p>A paired programming project with Juno College utilizing the TMDb API to create a matching game - how many do you know?</p>
-              <div class="linkContainer">
-                <a href="https://taglines-copy.netlify.app/" target="_blank">View Live</a>
-                <a href="https://github.com/Cristina-Codes/pairedProject" target="_blank">View Code</a>
-              </div><!-- .linkContainer END -->
-            </div><!-- .textContainer END -->
-          </div><!-- .project END -->
-
-          <div class="project arora">
-            <div class="imgContainer">
-              <img src="./assets/Optimized-arora.png" alt="A mockup of project Arora">
-            </div><!-- .imgContainer END -->
-            <div class="textContainer">
-              <h3>Arora</h3>
-              <h4>HTML5 | CSS3/Sass | JavaScript</h4>
-              <p>Solo project with Juno College working to create a responsive, accessible webpage from the provided PSD.</p>
-              <div class="linkContainer">
-                <a href="https://aroraproject.netlify.app/" target="_blank">View Live</a>
-                <a href="https://github.com/Cristina-Codes/aroraProject" target="_blank">View Code</a>
-              </div><!-- .linkContainer END -->
-            </div><!-- .textContainer END -->
-          </div><!-- .project END -->
-
-          <div class="project">
-            <div class="imgContainer">
-              <img src="./assets/polka.png" alt="A mockup of project Polka Dot Pickin'">
-            </div><!-- .imgContainer END -->
-            <div class="textContainer">
-              <h3>Polka Dot Pickin'</h3>
-              <h4>HTML5 | CSS3 | jQuery</h4>
-              <p>A game designed for preschool-age children to build hand-eye coordination on the computer and color recognition. Designed for desktops and tablets.</p>
-              <div class="linkContainer">
-                <a href="https://polkadotpickin.netlify.app/" target="_blank">View Live</a>
-                <a href="https://github.com/Cristina-Codes/polkaDotPickin" target="_blank">View Code</a>
-              </div><!-- .linkContainer END -->
-            </div><!-- .textContainer END -->
-          </div><!-- .project END -->
-
-        </div><!-- .projectContainer END -->
-      </div><!-- .wrapper END -->
-    </section> 
-
-    <section id="contact" class="contact">
-      <div class="wrapper">
-        <h2>Contact</h2>
-        <div class="textContainer">
-          <div class="iconContainer">
-            <a href="https://www.linkedin.com/in/cristina-grosser/" target="_blank">
-              <i class="devicon-linkedin-plain"></i>
-            </a>
-            <a href="https://github.com/Cristina-Codes" target="_blank">
+      <section id="skills" class="skills">
+        <div class="wrapper">
+          <h2>Toolkit</h2>
+          <ul class="iconContainer">
+            <li class="iconLI">
+              <i class="devicon-html5-plain"></i>
+              <p class="reveal">HTML5</p>
+            </li>
+            <li class="iconLI">
+              <i class="devicon-css3-plain"></i>
+              <p class="reveal">CSS3</p>
+            </li>
+            <li class="iconLI">
+              <i class="devicon-sass-original"></i>
+              <p class="reveal">Sass</p>
+            </li>
+            <li class="iconLI">
+              <i class="devicon-bootstrap-plain"></i>
+              <p class="reveal">Bootstrap</p>
+            </li>
+            <li class="iconLI">
+              <i class="devicon-javascript-plain"></i>
+              <p class="reveal">JavaScript</p>
+            </li>
+            <li class="iconLI">
+              <i class="devicon-jquery-plain"></i>
+              <p class="reveal">jQuery</p>
+            </li>
+            <li class="iconLI">
+              <i class="devicon-react-original"></i>
+              <p class="reveal">React</p>
+            </li>
+            <li class="iconLI">
+              <i class="devicon-firebase-plain"></i>
+              <p class="reveal">Firebase</p>
+            </li>
+            <li class="iconLI">
+              <i class="devicon-python-plain"></i>
+              <p class="reveal">Python</p>
+            </li>
+            <li class="iconLI">
+              <i class="devicon-flask-original"></i>
+              <p class="reveal">Flask</p>
+            </li>
+            <li class="iconLI">
+              <i class="devicon-jupyter-plain"></i>
+              <p class="reveal">Jupyter <span>Notebook</span></p>
+            </li>
+            <li class="iconLI">
+              <i class="devicon-pandas-original"></i>
+              <p class="reveal">pandas</p>
+            </li>
+            <li class="iconLI">
+              <i class="devicon-numpy-original"></i>
+              <p class="reveal">NumPy</p>
+            </li>
+            <li class="iconLI">
+              <i class="devicon-matlab-plain"></i>
+              <p class="reveal">MATLAB</p>
+            </li>
+            <li class="iconLI">
+              <i class="devicon-git-plain"></i>
+              <p class="reveal">Git</p>
+            </li>
+            <li class="iconLI">
               <i class="devicon-github-original"></i>
-            </a>
-            <a href="mailto:cristinagrosser@gmail.com">
-              <i class="fa-solid fa-envelope"></i>
-            </a>
-          </div><!-- .iconContainer END -->
-          <div class="linkContainer animate__animated animate__pulse">
-            <a href="https://calendly.com/cristinagrosser" target="_blank">Let's meet!</a>
-          </div><!-- .linkContainer END -->
-        </div><!-- .textContainer END -->
-        <a href='#home' class="arrow shortArrow upArrow">
-          <i class="fa-solid fa-angle-up"></i>
-        </a>
-      </div><!-- .wrapper END -->
-    </section>
-  </main>
-  
+              <p class="reveal">GitHub</p>
+            </li>
+            <!-- <li class="iconLI">
+              <i class="devicon-vscode-plain"></i>
+              <p class="reveal">VS Code</p>
+            </li> -->
+          </ul>
+          <!-- .iconContainer END -->
+          <h3>Adding to Toolkit</h3>
+          <ul class="iconContainer adding">
+            <li class="iconLI node">
+              <i class="devicon-nodejs-plain"></i>
+              <p class="reveal">Node.js</p>
+            </li>
+            <li class="iconLI">
+              <i class="devicon-express-original"></i>
+              <p class="reveal">Express</p>
+            </li>
+          </ul>
+          <!-- .iconContainer END -->
+          <a href="#projects" class="arrow shortArrow">
+            <i class="fa-solid fa-angle-down"></i>
+          </a>
+        </div>
+        <!-- .wrapper END -->
+      </section>
 
-  <footer>
-    <p class="wrapper">Built in 2022 by <a href="#about">Cristina Grosser</a></p>
-  </footer>
+      <section id="projects" class="projects">
+        <div class="wrapper">
+          <h2>Projects</h2>
+          <div class="projectContainer">
+            <div class="project">
+              <div class="imgContainer">
+                <img
+                  src="./assets/Optimized-HelpMeSocial.png"
+                  alt="A mockup of project HelpMeSocial💬"
+                />
+              </div>
+              <!-- .imgContainer END -->
+              <div class="textContainer">
+                <h3>HelpMeSocial💬</h3>
+                <h4>HTML5 | CSS3/Sass | React | Firebase | API</h4>
+                <p>
+                  Have you forgotten how to
+                  <span class="social">social?</span> Look no further!
+                  HelpMeSocial💬 has all the random facts you could ever want to
+                  spice up any conversation.
+                </p>
+                <div class="linkContainer">
+                  <a href="https://helpmesocial.netlify.app/" target="_blank"
+                    >View Live</a
+                  >
+                  <a
+                    href="https://github.com/Cristina-Codes/helpMeSocial"
+                    target="_blank"
+                    >View Code</a
+                  >
+                </div>
+                <!-- .linkContainer END -->
+              </div>
+              <!-- .textContainer END -->
+            </div>
+            <!-- .project END -->
 
-  <script src="./script.js"></script>
-</body>
+            <div class="project">
+              <div class="imgContainer">
+                <img
+                  src="./assets/Optimized-planted.png"
+                  alt="A mockup of project Planted"
+                />
+              </div>
+              <!-- .imgContainer END -->
+              <div class="textContainer">
+                <h3>Planted</h3>
+                <h4>HTML5 | CSS3/Sass | JavaScript</h4>
+                <p>
+                  Solo project with Juno College working to create a multipage
+                  site from the provided PSD. The site is responsive,
+                  accessible, and has the beginnings of an active comment
+                  section.
+                </p>
+                <div class="linkContainer">
+                  <a href="https://plantedproject.netlify.app/" target="_blank"
+                    >View Live</a
+                  >
+                  <a
+                    href="https://github.com/Cristina-Codes/planted"
+                    target="_blank"
+                    >View Code</a
+                  >
+                </div>
+                <!-- .linkContainer END -->
+              </div>
+              <!-- .textContainer END -->
+            </div>
+            <!-- .project END -->
+
+            <div class="project">
+              <div class="imgContainer">
+                <img
+                  src="./assets/Optimized-taglines.png"
+                  alt="A mockup of project Taglines...with a VENGEANCE"
+                />
+              </div>
+              <!-- .imgContainer END -->
+              <div class="textContainer">
+                <h3>Taglines...with a VENGEANCE</h3>
+                <h4>HTML5 | CSS3 | JavaScript | API</h4>
+                <p>
+                  A paired programming project with Juno College utilizing the
+                  TMDb API to create a matching game - how many do you know?
+                </p>
+                <div class="linkContainer">
+                  <a href="https://taglines-copy.netlify.app/" target="_blank"
+                    >View Live</a
+                  >
+                  <a
+                    href="https://github.com/Cristina-Codes/pairedProject"
+                    target="_blank"
+                    >View Code</a
+                  >
+                </div>
+                <!-- .linkContainer END -->
+              </div>
+              <!-- .textContainer END -->
+            </div>
+            <!-- .project END -->
+
+            <div class="project arora">
+              <div class="imgContainer">
+                <img
+                  src="./assets/Optimized-arora.png"
+                  alt="A mockup of project Arora"
+                />
+              </div>
+              <!-- .imgContainer END -->
+              <div class="textContainer">
+                <h3>Arora</h3>
+                <h4>HTML5 | CSS3/Sass | JavaScript</h4>
+                <p>
+                  Solo project with Juno College working to create a responsive,
+                  accessible webpage from the provided PSD.
+                </p>
+                <div class="linkContainer">
+                  <a href="https://aroraproject.netlify.app/" target="_blank"
+                    >View Live</a
+                  >
+                  <a
+                    href="https://github.com/Cristina-Codes/aroraProject"
+                    target="_blank"
+                    >View Code</a
+                  >
+                </div>
+                <!-- .linkContainer END -->
+              </div>
+              <!-- .textContainer END -->
+            </div>
+            <!-- .project END -->
+
+            <div class="project">
+              <div class="imgContainer">
+                <img
+                  src="./assets/polka.png"
+                  alt="A mockup of project Polka Dot Pickin'"
+                />
+              </div>
+              <!-- .imgContainer END -->
+              <div class="textContainer">
+                <h3>Polka Dot Pickin'</h3>
+                <h4>HTML5 | CSS3 | jQuery</h4>
+                <p>
+                  A game designed for preschool-age children to build hand-eye
+                  coordination on the computer and color recognition. Designed
+                  for desktops and tablets.
+                </p>
+                <div class="linkContainer">
+                  <a href="https://polkadotpickin.netlify.app/" target="_blank"
+                    >View Live</a
+                  >
+                  <a
+                    href="https://github.com/Cristina-Codes/polkaDotPickin"
+                    target="_blank"
+                    >View Code</a
+                  >
+                </div>
+                <!-- .linkContainer END -->
+              </div>
+              <!-- .textContainer END -->
+            </div>
+            <!-- .project END -->
+          </div>
+          <!-- .projectContainer END -->
+        </div>
+        <!-- .wrapper END -->
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="wrapper">
+          <h2>Contact</h2>
+          <div class="textContainer">
+            <div class="iconContainer">
+              <a
+                href="https://www.linkedin.com/in/cristina-grosser/"
+                target="_blank"
+              >
+                <i class="devicon-linkedin-plain"></i>
+              </a>
+              <a href="https://github.com/Cristina-Codes" target="_blank">
+                <i class="devicon-github-original"></i>
+              </a>
+              <a href="mailto:cristinagrosser@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            </div>
+            <!-- .iconContainer END -->
+            <div class="linkContainer animate__animated animate__pulse">
+              <a href="https://calendly.com/cristinagrosser" target="_blank"
+                >Let's meet!</a
+              >
+            </div>
+            <!-- .linkContainer END -->
+          </div>
+          <!-- .textContainer END -->
+          <a href="#home" class="arrow shortArrow upArrow">
+            <i class="fa-solid fa-angle-up"></i>
+          </a>
+        </div>
+        <!-- .wrapper END -->
+      </section>
+    </main>
+
+    <footer>
+      <p class="wrapper">
+        Built in 2022 by <a href="#about">Cristina Grosser</a>
+      </p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
 </html>
