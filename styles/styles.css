@@ -558,6 +558,26 @@ nav ul a:hover, nav ul a:focus {
   font-style: italic;
 }
 
+.additional {
+  background: white;
+  border: 2px solid #BBC0C3;
+}
+.additional h3 {
+  margin: 0;
+}
+.additional .linkContainer {
+  margin: 0;
+}
+.additional .linkContainer a {
+  font-size: 1.2rem;
+}
+.additional .textContainer {
+  border: none;
+}
+.additional .textContainer p {
+  font-size: 1.3rem;
+}
+
 .contact {
   padding: 20px 0 30px 0;
   background: #44BBA4;

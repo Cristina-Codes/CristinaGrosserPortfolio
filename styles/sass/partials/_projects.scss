@@ -7,12 +7,11 @@
   }
 }
 
-
 .project {
   text-align: center;
   margin: 20px 0;
   min-height: 445px;
-  .imgContainer{
+  .imgContainer {
     height: calc(100% / 3);
     img {
       border: 2px solid $neutral;
@@ -59,4 +58,25 @@
 
 .social {
   font-style: italic;
+}
+
+.additional {
+  background: white;
+  border: 2px solid $neutral;
+  h3 {
+    margin: 0;
+  }
+  .linkContainer {
+    margin: 0;
+    a {
+      font-size: 1.2rem;
+    }
+  }
+
+  .textContainer {
+    border: none;
+    p {
+      font-size: 1.3rem;
+    }
+  }
 }
