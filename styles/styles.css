@@ -492,6 +492,13 @@ nav ul a:hover, nav ul a:focus {
   display: block;
 }
 
+.xml {
+  background-image: url("/assets/new-xml-icon.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
 .projects {
   padding: 20px 0;
   background: #DED7F0;
@@ -853,6 +860,10 @@ footer a:hover, footer a:focus {
   .skills .iconContainer i {
     font-size: 5.5rem;
   }
+  .skills .iconContainer i .xml {
+    width: 40px;
+    height: 40px;
+  }
 }
 @media (min-width: 660px) {
   h1 {
@@ -867,6 +878,11 @@ footer a:hover, footer a:focus {
   }
   .skills .wrapper .iconContainer i {
     padding: 10px 20px;
+  }
+  .skills .wrapper .iconContainer .xml {
+    display: inline-block;
+    width: 55px;
+    height: 55px;
   }
   .projectContainer {
     -webkit-box-pack: justify;

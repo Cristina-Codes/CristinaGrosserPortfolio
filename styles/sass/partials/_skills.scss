@@ -5,11 +5,11 @@
   position: relative;
   .iconContainer {
     display: grid;
-    grid-template-areas: 
-    '1 2 3'
-    '4 5 6'
-    '7 8 9'
-    '10 11 12';
+    grid-template-areas:
+      "1 2 3"
+      "4 5 6"
+      "7 8 9"
+      "10 11 12";
     grid-template-columns: repeat(3, 1fr);
     padding-bottom: 10px;
     .iconLI {
@@ -48,4 +48,11 @@
   span {
     display: block;
   }
+}
+
+.xml {
+  background-image: url("/assets/new-xml-icon.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
