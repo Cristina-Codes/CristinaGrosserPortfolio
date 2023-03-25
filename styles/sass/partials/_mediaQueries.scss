@@ -11,6 +11,7 @@
     max-width: 343px;
     margin: 0 auto;
     .xml {
+      display: inline-block;
       width: 40px;
       height: 40px;
     }
@@ -51,11 +52,11 @@
 
   .skills .iconContainer i {
     font-size: 5.5rem;
-    .xml {
-      display: inline-block;
-      width: 55px;
-      height: 55px;
-    }
+  }
+  .xml {
+    display: inline-block;
+    width: 55px;
+    height: 55px;
   }
 }
 
