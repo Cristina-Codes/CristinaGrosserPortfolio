@@ -829,6 +829,10 @@ footer a:hover, footer a:focus {
     max-width: 343px;
     margin: 0 auto;
   }
+  .iconContainer .xml {
+    width: 40px;
+    height: 40px;
+  }
   .projectContainer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -861,8 +865,9 @@ footer a:hover, footer a:focus {
     font-size: 5.5rem;
   }
   .skills .iconContainer i .xml {
-    width: 40px;
-    height: 40px;
+    display: inline-block;
+    width: 55px;
+    height: 55px;
   }
 }
 @media (min-width: 660px) {
@@ -878,11 +883,6 @@ footer a:hover, footer a:focus {
   }
   .skills .wrapper .iconContainer i {
     padding: 10px 20px;
-  }
-  .skills .wrapper .iconContainer .xml {
-    display: inline-block;
-    width: 55px;
-    height: 55px;
   }
   .projectContainer {
     -webkit-box-pack: justify;
